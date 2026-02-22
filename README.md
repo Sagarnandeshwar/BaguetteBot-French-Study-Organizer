@@ -52,12 +52,16 @@ Key Concepts:
 - Rate limiting (sleep control)
 
 Example Output:
+```text
 bonjour    hello
 merci      thank you
+```
 
 Or for conversations:
+```text
 A: Bonjour, comment ça va ?
 B: Ça va bien, merci.
+```
 
 Because yes, we respect clean data.
 
@@ -89,18 +93,18 @@ We:
 - Write categorized lines into separate folder buckets
 
 Example:
+```text
 output/
- ├── vocab/
- │    ├── A1.txt
- │
- ├── bucket/
- │    ├── vocab/
- │         ├── Food.txt
- │         ├── Travel.txt
- │         ├── Grammar.txt
+├── vocab/
+│   └── A1.txt
+└── bucket/
+    └── vocab/
+        ├── Food.txt
+        ├── Travel.txt
+        └── Grammar.txt
+```
 
-Basically:
-“You go here. You go there. You? Definitely grammar.”
+Basically: “You go here. You go there. You? Definitely grammar.”
 
 # Tech Stack
 - Python 3
@@ -116,9 +120,11 @@ Low budget.
 High automation.
 Zero manual suffering.
 
-Environment Setup
+# Environment Setup
 Set your API key:
+```text
 export OPENAI_API_KEY=your_key_here
+```
 
 Then run:
 - python extract.py
